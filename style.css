@@ -1,0 +1,55 @@
+body {
+  overflow-x: hidden;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  animation: box 5s linear infinite;
+}
+
+@keyframes box {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.background-image {
+  background-image: url("https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG8lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  /* margin: 10px; */
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container {
+  background-color: darkblue;
+  /* height: 400px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column-reverse;
+}
+.flex-container img {
+  height: 250px;
+}
